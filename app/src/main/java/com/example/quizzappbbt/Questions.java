@@ -11,24 +11,26 @@ public class Questions {
             "True or False: The main characters work at the California Institute of Technology (Caltech).",
             "True or False: The series was based on a real-life scientific research group."
     };
+    private static final boolean[] answers = {
+            true,
+            true,
+            true,
+            true,
+            false
+    };
 
     public Questions(int num) {
-        questionNum = num;
-        answer = getAnswer(questionNum);
+        this.questionNum = num;
+        this.answer = getAnswer(this.questionNum);
     }
 
-    public boolean getAnswer(int num) {
-        if (num == 1) {
-            return true;
-        } else if (num == 2) {
-            return true;
-        } else if (num == 3) {
-            return false;
-        } else if (num == 4) {
-            return true;
-        } else {
-            return false;
+    private boolean getAnswer(int num) {
+        for (int i = 1; i < answers.length - 1; i++) {
+            if (i == num) {
+                return answers[i];
+            }
         }
+        return false;
     }
 
     public boolean returnAnswer() {
@@ -36,8 +38,10 @@ public class Questions {
     }
 
     public static String nextQuestion(int currentNum) {
-        if (currentNum >= 0 && currentNum < questions.length) {
-            return questions[currentNum];
+        for (int i = 0; i < questions.length; i++) {
+            if (i == currentNum) {
+                return questions[i];
+            }
         }
         return "";
     }
