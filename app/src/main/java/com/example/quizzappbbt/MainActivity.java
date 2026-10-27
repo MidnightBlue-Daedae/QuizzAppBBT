@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     TextView question;
     int questionNum, numCorrect;
-    Button True, False, restart, showScore;
+    Button True, False, restart, showScore, Hint;
     boolean answer;
 
     @Override
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         restart = findViewById(R.id.restart);
         showScore = findViewById(R.id.showScore);
         showScore.setVisibility(GONE);
+        Hint = findViewById(R.id.hint);
 
         True.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +97,16 @@ public class MainActivity extends AppCompatActivity {
                 question.setText(Questions.nextQuestion(0));
             }
         });
+
+        Hint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Hint.class);
+                intent.putExtra("QUESTION_NUM", questionNum);
+                startActivity(intent);
+
+            }
+        });
     }
 
 
@@ -106,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             question.setText("You have now completed the quiz.");
             showScore.setVisibility(VISIBLE);
+            Hint.setVisibility(GONE);
 
         }
     }
