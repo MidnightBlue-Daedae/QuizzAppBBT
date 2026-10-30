@@ -13,116 +13,22 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    TextView question;
-    int questionNum, numCorrect;
-    Button True, False, restart, showScore, Hint;
-    boolean answer;
+    Button start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        start = findViewById(R.id.start);
 
-        questionNum = 0;
-        numCorrect = 0;
-
-        question = findViewById(R.id.question);
-        True = findViewById(R.id.True);
-        False = findViewById(R.id.False);
-        restart = findViewById(R.id.restart);
-        showScore = findViewById(R.id.showScore);
-        showScore.setVisibility(GONE);
-        Hint = findViewById(R.id.hint);
-
-        True.setOnClickListener(new View.OnClickListener() {
+        start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (questionNum < 5) {
-                    Questions questionA = new Questions(questionNum + 1);
-                    answer = questionA.returnAnswer();
-                    if (answer) {
-                        showLargeToast("Great job, you got it correct!");
-                        numCorrect++;
-                    } else {
-                        showLargeToast("Oh no, it's incorrect");
-                    }
-                    nextQuestion();
-                } else {
-                    question.setText("You have now completed the quiz.");
-                    showScore.setVisibility(VISIBLE);
-
-                }
-            }
-        });
-
-        False.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (questionNum < 5) {
-                    Questions questionB = new Questions(questionNum + 1);
-                    answer = questionB.returnAnswer();
-                    if (!answer) {
-                        showLargeToast("Great job, you got it correct!");
-                        numCorrect++;
-                    } else {
-                        showLargeToast("Oh no, it's incorrect");
-                    }
-                    nextQuestion();
-                } else {
-                    question.setText("You have now completed the quiz.");
-                    showScore.setVisibility(VISIBLE);
-                }
-            }
-        });
-
-        showScore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtra("Score",numCorrect);
+                Intent intent = new Intent(MainActivity.this, ShowQuestions.class);
                 startActivity(intent);
-                questionNum = 0;
-                numCorrect = 0;
-                showScore.setVisibility(GONE);
-                question.setText(Questions.nextQuestion(0));
             }
         });
 
-        restart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                questionNum = 0;
-                numCorrect = 0;
-                showScore.setVisibility(GONE);
-                question.setText(Questions.nextQuestion(0));
-            }
-        });
 
-        Hint.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Hint.class);
-                intent.putExtra("QUESTION_NUM", questionNum);
-                startActivity(intent);
-
-            }
-        });
-    }
-
-
-    private void nextQuestion() {
-        questionNum++;
-        if (questionNum < 5) {
-            question.setText(Questions.nextQuestion(questionNum));
-        } else {
-            question.setText("You have now completed the quiz.");
-            showScore.setVisibility(VISIBLE);
-            Hint.setVisibility(GONE);
-
-        }
-    }
-
-    private void showLargeToast(String message) {
-        Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
     }
 }

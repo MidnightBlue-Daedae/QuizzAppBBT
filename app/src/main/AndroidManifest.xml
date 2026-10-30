@@ -30,7 +30,14 @@
             android:name=".SecondActivity"
             android:exported="false" />
         <activity
+            android:name=".ShowQuestions"
+            android:exported="false" />
+
+        <activity
             android:name=".Hint"
+            android:exported="false" />
+        <activity
+            android:name=".bonus"
             android:exported="false" />
 
     </application>

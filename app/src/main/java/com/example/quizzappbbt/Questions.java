@@ -25,7 +25,7 @@ public class Questions {
     }
 
     private boolean getAnswer(int num) {
-        for (int i = 1; i < answers.length - 1; i++) {
+        for (int i = 0; i < answers.length; i++) {
             if (i == num) {
                 return answers[i];
             }

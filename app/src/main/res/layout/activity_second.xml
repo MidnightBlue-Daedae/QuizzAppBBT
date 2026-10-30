@@ -14,25 +14,85 @@
         android:textColor="@color/white"
         android:textSize="80dp"
         android:textStyle="bold"
-        android:text="192919291921"/>
+        android:text="192919291921"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <Button
         android:id="@+id/btnBackToStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play Again"
-        android:textSize="40dp"
+        android:textSize="50dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:backgroundTint="@color/black" />
+        android:backgroundTint="@color/black"
+        android:visibility="gone"/>
     <Button
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send Score"
-        android:textSize="40dp"
+        android:textSize="50dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:backgroundTint="@color/black" />
+        android:backgroundTint="@color/black"
+        android:visibility="gone"/>
+        <Button
+            android:id="@+id/home"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:text="Back to home screen"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to try a bonus question for 2 points? (Warning: Getting the question wrong will lose you 2 points)"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin = "30dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="70dp"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"/>
+        <Space
+            android:id="@+id/btnSpace"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="No"
+            android:backgroundTint="@color/black"/>
+    </LinearLayout>
 
 
 </LinearLayout>
