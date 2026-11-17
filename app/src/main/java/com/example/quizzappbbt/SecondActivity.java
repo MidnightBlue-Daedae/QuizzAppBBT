@@ -67,7 +67,7 @@ public class SecondActivity extends AppCompatActivity {
                          }
         });
         double percent = (score / 5.0) * 100;
-        resultText.setText("Your final score is: " + score + "/5.0 or " + (int)percent +"%");
+        resultText.setText(R.string.result_text + score + "/5" + R.string.or + percent);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override

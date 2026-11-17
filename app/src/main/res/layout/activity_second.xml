@@ -14,7 +14,7 @@
         android:textColor="@color/white"
         android:textSize="80dp"
         android:textStyle="bold"
-        android:text="192919291921"
+        android:text=""
         android:visibility="gone"/>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         android:id="@+id/btnBackToStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play Again"
+        android:text="@string/play_again"
         android:textSize="50dp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -34,7 +34,7 @@
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send Score"
+        android:text="@string/email"
         android:textSize="50dp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -44,7 +44,7 @@
             android:id="@+id/home"
             android:layout_width="500dp"
             android:layout_height="wrap_content"
-            android:text="Back to home screen"
+            android:text="@string/home"
             android:textSize="45dp"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -56,7 +56,7 @@
         android:id="@+id/bonus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Do you want to try a bonus question for 2 points? (Warning: Getting the question wrong will lose you 2 points)"
+        android:text="@string/bonus_ask"
         android:textColor="@color/white"
         android:textSize="50dp"
         android:textStyle="bold"
@@ -72,7 +72,7 @@
             android:id="@+id/yes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Yes"
+            android:text="@string/Yes"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="70dp"
@@ -90,7 +90,7 @@
             android:textSize="70dp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="No"
+            android:text="@string/No"
             android:backgroundTint="@color/black"/>
     </LinearLayout>
 

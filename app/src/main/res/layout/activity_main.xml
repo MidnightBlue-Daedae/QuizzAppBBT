@@ -12,7 +12,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="65dp"
-        android:text="Welcome to the Big Bang Theory Quiz!"
+        android:text="@string/Title"
         android:layout_gravity="center"
         android:layout_margin="50dp"
         android:textAlignment="center"/>
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="The Big Bang Theory is a hit American television sitcom that aired from 2007 to 2019. The show follows a group of brilliant but socially awkward scientists, their aspiring actress neighbor, and the funny everyday situations that come from their different worldviews and quirky friendships."
+            android:text="@string/show_desc"
             android:textSize="40dp"
             android:textStyle="bold"/>
             <Button
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:text="Start Quiz"
+                android:text="@string/start"
                 android:textSize="50dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
@@ -53,6 +53,14 @@
         </LinearLayout>
 
     </LinearLayout>
-
+    <Button
+        android:layout_marginLeft="70dp"
+        android:id="@+id/btnLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_language"
+        android:textSize="40dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
 
 </LinearLayout>

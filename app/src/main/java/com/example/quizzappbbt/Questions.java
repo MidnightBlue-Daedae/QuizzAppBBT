@@ -4,13 +4,16 @@ public class Questions {
 
     private final int questionNum;
     private final boolean answer;
-    private static final String[] questions = {
-            "True or False: Sheldon Cooper's signature catchphrase after pulling a prank or making a joke is 'Bazinga!'",
-            "True or False: The Big Bang Theory had a total of 12 seasons.",
-            "True of False: The Big Bang Theory was filmed in front of a live studio audience.",
-            "True or False: The main characters work at the California Institute of Technology (Caltech).",
-            "True or False: The series was based on a real-life scientific research group."
+
+    // Store R.string IDs (integers) instead of hardcoded Strings
+    private static final int[] questions = {
+            R.string.q1,
+            R.string.q2,
+            R.string.q3,
+            R.string.q4,
+            R.string.q5
     };
+
     private static final boolean[] answers = {
             true,
             true,
@@ -37,12 +40,13 @@ public class Questions {
         return this.answer;
     }
 
-    public static String nextQuestion(int currentNum) {
+    // Return an int (the R.string ID) instead of a String
+    public static int nextQuestion(int currentNum) {
         for (int i = 0; i < questions.length; i++) {
             if (i == currentNum) {
                 return questions[i];
             }
         }
-        return "";
+        return R.string.q1;
     }
 }

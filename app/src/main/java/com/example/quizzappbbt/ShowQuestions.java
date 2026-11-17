@@ -43,14 +43,14 @@ public class ShowQuestions extends AppCompatActivity {
                     Questions questionA = new Questions(questionNum);
                     answer = questionA.returnAnswer();
                     if (answer) {
-                        showLargeToast("Great job, you got it correct!");
+                        showLargeToast(String.valueOf(R.string.correct));
                         numCorrect++;
                     } else {
-                        showLargeToast("Oh no, it's incorrect");
+                        showLargeToast(String.valueOf(R.string.incorrect));
                     }
                     nextQuestion();
                 } else {
-                    question.setText("You have now completed the quiz.");
+                    question.setText(String.valueOf(R.string.complete));
                     showScore.setVisibility(VISIBLE);
 
                 }
@@ -64,14 +64,14 @@ public class ShowQuestions extends AppCompatActivity {
                     Questions questionB = new Questions(questionNum);
                     answer = questionB.returnAnswer();
                     if (!answer) {
-                        showLargeToast("Great job, you got it correct!");
+                        showLargeToast(String.valueOf(R.string.correct));
                         numCorrect++;
                     } else {
-                        showLargeToast("Oh no, it's incorrect");
+                        showLargeToast(String.valueOf(R.string.incorrect));
                     }
                     nextQuestion();
                 } else {
-                    question.setText("You have now completed the quiz.");
+                    question.setText(String.valueOf(R.string.complete));
                     showScore.setVisibility(VISIBLE);
                 }
             }
@@ -121,7 +121,7 @@ public class ShowQuestions extends AppCompatActivity {
         if (questionNum < 5) {
             question.setText(Questions.nextQuestion(questionNum));
         } else {
-            question.setText("You have now completed the quiz.");
+            question.setText(String.valueOf(R.string.complete));
             showScore.setVisibility(VISIBLE);
 
         }
