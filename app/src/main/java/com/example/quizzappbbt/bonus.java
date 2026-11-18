@@ -32,7 +32,7 @@ public class bonus extends AppCompatActivity {
         True.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText("Uh Oh, you got it wrong. Your score will now be decreased by 2 points.");
+                text.setText(getString(R.string.bonus_wrong));
                 prevScore[0] -= 2;
                 newScore.setVisibility(VISIBLE);
 
@@ -42,7 +42,7 @@ public class bonus extends AppCompatActivity {
         False.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText("Congrats! 2 points have just been added to your score.");
+                text.setText(getString(R.string.bonus_right));
                 prevScore[0] += 2;
                 newScore.setVisibility(VISIBLE);
             }

@@ -39,4 +39,6 @@
     <string name="correct">" ทำได้ดีมาก คุณตอบถูกแล้ว!"</string>
     <string name="incorrect">แย่แล้ว มันไม่ถูกต้อง</string>
     <string name="change_language">English</string>
+    <string name="bonus_wrong">แย่แล้ว คุณตอบผิด คะแนนของคุณจะถูกหักออก 2 คะแนน</string>
+    <string name="bonus_right">ยินดีด้วย! คะแนนของคุณเพิ่มขึ้นอีก 2 แต้มแล้ว</string>
 </resources>

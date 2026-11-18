@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">QuizzAppBBT</string>
     <string name="Title">Welcome To The Big Bang Theory Quiz</string>
     <string name="show_desc">The Big Bang Theory is a hit American television sitcom that aired from 2007 to 2019. The show follows a group of brilliant but socially awkward scientists, their aspiring actress neighbor, and the funny everyday situations that come from their different worldviews and quirky friendships.</string>
@@ -40,7 +40,8 @@
     <string name="correct">Great job, you got it correct!</string>
     <string name="incorrect">Oh no, it\'s incorrect</string>
     <string name="complete">You have now completed the quiz.</string>
-    <string name="hint_1">Think back to classic Sheldon moments like when he hid in a ball pit or pulled a practical joke on Leonard—is that the famous word he yelled every time?</string>
     <string name="change_language">Thai</string>
+    <string name="bonus_wrong">Uh Oh, you got it wrong. Your score will now be decreased by 2 points</string>
+    <string name="bonus_right">Congrats! 2 points have just been added to your score.</string>
 </resources>
 

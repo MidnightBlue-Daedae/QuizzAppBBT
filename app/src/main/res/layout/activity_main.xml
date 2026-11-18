@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:textSize="65dp"
+        android:textSize="57dp"
         android:text="@string/Title"
         android:layout_gravity="center"
         android:layout_margin="50dp"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="@string/show_desc"
-            android:textSize="40dp"
+            android:textSize="32dp"
             android:textStyle="bold"/>
             <Button
                 android:id="@+id/start"
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="@string/start"
-                android:textSize="50dp"
+                android:textSize="42dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/black"
@@ -58,8 +58,9 @@
         android:id="@+id/btnLanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/change_language"
-        android:textSize="40dp"
+        android:textSize="32dp"
         android:backgroundTint="@color/black"
         android:textColor="@color/white"/>
 

@@ -21,7 +21,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:text="@string/Hint_num"
-        android:textSize="70dp"
+        android:textSize="62dp"
         android:textAlignment="center" />
 
         <TextView
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text=" 0:"
-            android:textSize="70dp"
+            android:textSize="62dp"
             android:textStyle="bold"
             android:textColor="@color/white"
             />
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:textSize="50dp"
+        android:textSize="42dp"
         android:text=" "
         android:layout_marginTop="30dp"/>
     <Button
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back_question"
-        android:textSize="60dp"
+        android:textSize="52dp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/black"

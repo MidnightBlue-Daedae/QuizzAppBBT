@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Toggle between Thai ("Th") and English ("en")
                 LocaleListCompat newLocale;
-                if (currentLang.startsWith("Th")) {
+                if (currentLang.startsWith("th")) {
                     newLocale = LocaleListCompat.forLanguageTags("en");
                 } else {
                     newLocale = LocaleListCompat.forLanguageTags("th");

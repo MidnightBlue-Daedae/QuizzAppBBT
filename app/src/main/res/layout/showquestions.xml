@@ -9,9 +9,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="@string/show_quest_title"
         android:textColor="@color/white"
-        android:textSize="90dp"
+        android:textSize="82dp"
         android:layout_gravity="center"
         android:textStyle="bold"
         />
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/q1"
         android:textStyle="bold"
-        android:textSize="60dp"
+        android:textSize="52dp"
         android:textColor="@color/white"
         android:layout_marginTop="70dp"
         android:textAlignment="center"/>
@@ -41,7 +42,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/black"
             android:text="@string/True"
-            android:textSize="70dp"
+            android:textSize="62dp"
             android:textColor="@color/white"
             android:textStyle="bold"
             />
@@ -57,7 +58,7 @@
             android:textStyle="bold"
             android:textColor="@color/white"
             android:text="@string/False"
-            android:textSize="70dp"
+            android:textSize="62dp"
             android:backgroundTint="@color/black"/>
 
     </LinearLayout>
@@ -74,7 +75,7 @@
             android:layout_height="wrap_content"
             android:text="@string/restart"
             android:textStyle="bold"
-            android:textSize="60dp"
+            android:textSize="52dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/black"
             android:layout_weight="1"
@@ -87,7 +88,7 @@
             android:layout_height="wrap_content"
             android:text="@string/get_h"
             android:textStyle="bold"
-            android:textSize="60dp"
+            android:textSize="52dp"
             android:textColor="@color/white"
             android:backgroundTint="@color/black"
             android:layout_weight="1"
@@ -97,7 +98,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40dp"
+        android:textSize="32dp"
         android:textColor="#E60D0D"
         android:textStyle="bold"
         android:text="@string/warning"
@@ -109,7 +110,7 @@
         android:layout_gravity="center"
         android:text="@string/show_score"
         android:textStyle="bold"
-        android:textSize="50dp"
+        android:textSize="42dp"
         android:textColor="@color/white"
         android:backgroundTint="@color/black"
         android:visibility="gone"/>
